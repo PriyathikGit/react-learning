@@ -1,18 +1,14 @@
+import Index from "./assets/components/ContextApiProject/ThemeSwitcher/Index"
+import UserContextProvider from "./context/UserContextProvider"
 
-import { useState } from 'react'
-import './App.css'
-import BoxColor from './assets/components/BoxColor'
+
+
 
 function App() {
-  const [color,setColor] = useState(null)
-
-  const handleColor = (e)=>{
-    setColor(e.target.value)
-  }
   return (
-    <>
-     <BoxColor handleColor={handleColor} color={color}/>
-    </>
+    <UserContextProvider>
+    <Index/>
+    </UserContextProvider>
   )
 }
 
