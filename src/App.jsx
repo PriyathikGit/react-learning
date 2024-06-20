@@ -1,13 +1,16 @@
-import Index from "./assets/components/ContextApiProject/ThemeSwitcher/Index"
+
+import Index from "./assets/components/Redux-Project/Index"
 import UserContextProvider from "./context/UserContextProvider"
 
 
 
 
 function App() {
-  return (
+  return ( 
+    // this context provider used when we learning useContext, the first way
+    // made a context file pass all the context there
     <UserContextProvider>
-    <Index/>
+      <Index/>
     </UserContextProvider>
   )
 }
